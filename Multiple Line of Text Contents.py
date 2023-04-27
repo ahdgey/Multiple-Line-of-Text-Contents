@@ -14,6 +14,10 @@ print("-" * 90)
 def text ():
 
 #Open My Life.txt (read) and then write text_input as the mode
-    with open("My Life.txt", "w") as text_input
+    with open("My Life.txt", "w") as text_input:
 
-    
+        #To constantly run the program block, apply the while loop
+        while True:
+            line = input("Enter line: ")
+
+           
