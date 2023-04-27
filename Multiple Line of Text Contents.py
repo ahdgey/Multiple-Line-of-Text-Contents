@@ -22,7 +22,7 @@ def text ():
 
         #In My Life.txt, write the input
             text_input.write(line + "\n")
-            add_line = input("Are there more line y/n?")
+            add_line = input("Are there more line y/n? ")
             if add_line.lower() != "y":
                 break
 
@@ -30,4 +30,8 @@ def text ():
     print("Inputted lines: ")
     with open("My Life.txt") as text_input:
 
-        
+        #Read every line
+        for line in text_input:
+            print(line.strip())
+
+text()
