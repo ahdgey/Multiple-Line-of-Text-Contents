@@ -18,16 +18,18 @@ def text ():
 
         #To constantly run the program block, apply the while loop
         while True:
-            line = input("Enter line: ")
+            line = input("\033[0;31mEnter line: \033[1;37m")
 
         #In My Life.txt, write the input
             text_input.write(line + "\n")
-            add_line = input("Are there more line y/n? ")
+            add_line = input("\033[0;33mAre there more line y/n? \033[1;37m")
             if add_line.lower() != "y":
                 break
 
+        print("\033[0;31m`" * 90)
+
 #Output, print the texts
-    print("Inputted lines: ")
+    print("\033[0;35mInputted lines: \033[1;37m")
     with open("My Life.txt") as text_input:
 
         #Read every line
