@@ -12,4 +12,8 @@ print("\033[1;32m\nShe's from BSCPE 1-4")
 print("-" * 90)
 
 def text ():
+
+#Open My Life.txt (read) and then write text_input as the mode
+    with open("My Life.txt", "w") as text_input
+
     
